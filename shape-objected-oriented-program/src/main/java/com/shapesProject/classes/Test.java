@@ -5,5 +5,6 @@ public class Test {
 
         Circle circle1=new Circle(2.01, "chs", "red");
         circle1.printShapesCall();
+        System.out.println(circle1.getArea());
     }
 }

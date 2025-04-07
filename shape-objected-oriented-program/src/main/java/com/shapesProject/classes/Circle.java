@@ -14,4 +14,18 @@ public class Circle extends Shape{
     public void printShapesCall() {
         System.out.println("this is circle class");
     }
+
+    public double getR() {
+        return r;
+    }
+
+    public void setR(double r) {
+        this.r = r;
+    }
+
+    public double getArea(){
+
+        setR(3);
+        return (2 * pi) * getR();
+    }
 }
