@@ -5,14 +5,26 @@ public class Circle extends Shape{
 
     private double r;
 
-    public Circle(double r, String color, String name){
-        super(color, name);
-        this.r=r;
+    public Circle(String name, String color, double length, double width){
+        super(name, color, length, width);
+        this.r=length;
+        this.r=getWidth();
     }
 
     @Override
     public void printShapesCall() {
         System.out.println("this is circle class");
+    }
+
+    @Override
+    public double getArea() {
+        return 2*pi*r;
+    }
+
+    @Override
+    public double getEnvironment() {
+
+        return 2 * pi * Math.pow(r, 2);
     }
 
     public double getR() {
@@ -23,9 +35,6 @@ public class Circle extends Shape{
         this.r = r;
     }
 
-    public double getArea(){
 
-        setR(3);
-        return (2 * pi) * getR();
-    }
+
 }
