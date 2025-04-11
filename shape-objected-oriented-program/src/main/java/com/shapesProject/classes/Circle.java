@@ -1,10 +1,16 @@
 package com.shapesProject.classes;
 
+
+//Circle class inherit Shape class
 public class Circle extends Shape{
     private static final double pi=3.14;
 
+
+    //r is a Radius of courage
     private double r;
 
+
+    //class constructor
     public Circle(String name, String color, double length, double width){
         super(name, color, length, width);
         this.r=length;
@@ -18,13 +24,15 @@ public class Circle extends Shape{
 
     @Override
     public double getArea() {
-        return 2*pi*r;
+        return 2*pi*getR();
     }
 
+
+    //implement parent class abstract method
     @Override
     public double getEnvironment() {
 
-        return 2 * pi * Math.pow(r, 2);
+        return 2 * pi * Math.pow(getR(), 2);
     }
 
     public double getR() {
