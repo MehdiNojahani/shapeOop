@@ -1,13 +1,16 @@
 package com.shapesProject.classes;
 
-public abstract class Shape {
+ public abstract class Shape {
 
+
+     //instance var
     private String color;
     private String name;
     private double length;
     private double width;
 
 
+    //class constructor
     public Shape(String name, String color, double length, double width) {
         setName(name);
         setColor(color);
@@ -15,6 +18,7 @@ public abstract class Shape {
         setWidth(width);
     }
 
+    //getter and setter class
     public double getLength() {
         return length;
     }
@@ -52,6 +56,8 @@ public abstract class Shape {
         System.out.println("this is shape class...");
     }
 
+
+    //method for calculate
     public abstract double getArea();
 
     public abstract double getEnvironment();
