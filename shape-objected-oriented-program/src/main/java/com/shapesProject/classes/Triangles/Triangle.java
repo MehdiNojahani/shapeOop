@@ -29,5 +29,7 @@ public class Triangle extends Shape {
         System.out.println("Right triangle");
     }
 
+    public Triangle() {
 
+    }
 }

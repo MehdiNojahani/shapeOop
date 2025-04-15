@@ -25,4 +25,8 @@ public class IsoscelesTriangle extends Triangle {
     public void setP(double p) {
         this.p = p;
     }
+
+    public void isoTriangleList(){
+
+    }
 }
