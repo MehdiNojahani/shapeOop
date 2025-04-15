@@ -18,7 +18,11 @@ package com.shapesProject.classes;
         setWidth(width);
     }
 
-    //getter and setter class
+     public Shape() {
+
+     }
+
+     //getter and setter class
     public double getLength() {
         return length;
     }

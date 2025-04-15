@@ -10,6 +10,15 @@ public class Circle extends Shape{
     private double r;
 
 
+    public Circle(){
+        super();
+    }
+
+    public Circle(String c) {
+        super();
+        System.out.println("this is circle class " + c);
+    }
+
     //class constructor
     public Circle(String name, String color, double length, double width){
         super(name, color, length, width);

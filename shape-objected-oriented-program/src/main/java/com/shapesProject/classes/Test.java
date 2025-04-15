@@ -18,5 +18,18 @@ public class Test {
         Triangle triangles=new IsoscelesTriangle("t1", "red", 1, 2, 4);
         triangles.printShapesCall();
         System.out.println("Isosceles triangle = " + triangles.getArea());
+
+
+        System.out.println();
+        System.out.println("---------------------");
+
+
+
+        Shape shape=ShapeFactoryClass.shapeCreation("circle");
+
+        if (shape instanceof Circle){
+            System.out.println("Circle class");
+        }
+
     }
 }
